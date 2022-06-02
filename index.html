@@ -16,6 +16,19 @@
   </head>
   <body>
     <center><a href="mailto:info@thewtaf.co.uk"><img src="./wine-traders-for-alternative-formats-logo.png" alt="Wine Traders For Alternative Formats Logo" style="max-width: 33%;" /></a></center>
+    <center>
+    <p><b>Emissions from glass wine bottles in the UK so far this year:</p>
+    <p id="counter"></p>
+      <script>
+        function update(){
+          const d = new Date();
+          let CO2e = Math.round((d.getTime() - 1640995200000) * 0.026648116438356);
+          document.getElementById('counter').innerHTML = CO2e + ' Kg CO2e';
+        }
+        setInterval(update,100);
+      </script>
+    <p>90% of this could be saved by switching to alternative formats</p>
+    </center>
     <center><img src="./wine-traders-for-alternative-formats.jpg" alt="Wine Traders For Alternative Formats" style="max-width: 800px;" /></center>
     <h1>WTAF? It's time for the wine industry to take an alternative approach to packaging</h1>
     <p>
@@ -27,6 +40,7 @@
     <p>
       <strong>WTAF</strong> founding members are <a href="https://www.bibwine.co.uk">BIB Wine</a>, <a href="https://www.cannedwine.co">Canned Wine Co</a>, <a href="https://www.coppercrew.co.uk">Copper Crew</a>, <a href="http://www.graftwine.co.uk">Graft Wine Company</a>, <a href="https://morewine.co.uk">More Wine</a> and <a href="https://www.wheninromewine.com">When in Rome Wine</a>, a vanguard of the new wave of wine companies, who believe the biggest change they can make in wine is to reach for something other than a bottle.
     </p>
+    <p>In addition <a href="https://www.legrappin.com/">Le Grappin</a>, <a href="https://www.kissofwine.co.uk/">Kiss of Wine</a>, and <a href="https://www.cantinagoccia.com/">Cantina Goccia</a> have joined the alliance.
     <p>
       For all press enquiries, or if you'd like to find out more about the group and our mission please send an email to <a href="mailto:info@thewtaf.co.uk">info@thewtaf.co.uk</a>
     </p>
